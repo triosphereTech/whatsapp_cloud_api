@@ -36,6 +36,8 @@ app.post("/webhook", async (req, res) => {
 
     if (!message) return;
 
+    console.log(message)
+
     const from = message.from; // user number
 
     // ✅ Only reply to registered test numbers (dev safety)
